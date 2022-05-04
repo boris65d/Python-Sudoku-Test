@@ -7,14 +7,15 @@ from timeit import default_timer as timer
 import pygame as pg
 import pygamebg
 
-# pyinstaller --onefile sudoku.py  ******* ovako se pravi sudoku.exe
-pg.init()  # ********** inicijalizuje modul pygame ********************
-#  *****  dugme  ************************** treba napraviti efitor za postavlanje dugmadi na ekran ***********
+# pyinstaller --onefile sudoku.py ****** this is how to make sudoku.exe ********** ovako se pravi sudoku.exe
+pg.init()  # ********** initijalize modul pygame ********************
+#  ****** button ******  dugme  ************************** treba napraviti efitor za postavlanje dugmadi na ekran ***********
+#  ****** button ******  dugme  ************************** to do: make editor for seting buttons on screen ***********
 dugmad = [[0, 0, 0, " ", 0, False, 0, 0, ""],
           [1, 590, 100, "  Nova igra  ", 18, False, 1, 1, "nova_igra()"],
           [2, 590, 160, " - ", 22, False, 1, 1, "set_tezina(-1)"],
           [3, 696, 160, " + ", 22, False, 1, 1, "set_tezina(1)"],
-          [4, 667, 500, " Kraj ", 18, False, 1, 1, "pg.quit()"],  # *** quit treba popraviti, javlja grešku ba kraju.
+          [4, 667, 500, " Kraj ", 18, False, 1, 1, "pg.quit()"],  # *** quit() needs repair, have error .
           [15, 590, 460, "   Rešenje   ", 18, False, 1, 1, "resi(70,70)"],
           [16, 590, 430, "  Iz početka ", 18, False, 1, 1, "iz_pocetka(70,70)"],
           [14, 590, 400, "   Brisanje  ", 18, False, 1, 1, "brisanje()"],
